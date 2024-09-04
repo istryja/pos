@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #005f99;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    padding: 2rem;
+}
+
+#cashier-interface {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.search-section {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.search-section input {
+    width: 70%;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%; /* Position directly below the search input */
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    max-height: 150px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.dropdown div {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.dropdown div:hover {
+    background-color: #f0f0f0;
+}
+
+.cart-section {
+    margin-top: 1rem;
+}
+
+.cart-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-section th, .cart-section td {
+    border: 1px solid #ddd;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.total-section {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.payment-section {
+    margin-top: 1rem;
+}
+
+.payment-section button {
+    padding: 0.5rem 1.5rem;
+    font-size: 1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+button {
+    padding: 0.3rem 0.5rem;
+    font-size: 1rem;
+    margin: 0 0.2rem;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}

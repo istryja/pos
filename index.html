@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS System - Cashier Interface</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>POS System - Cashier Interface</h1>
+    </header>
+    <main>
+        <section id="cashier-interface">
+            <div class="search-section">
+                <input type="text" id="product-search" placeholder="Search for a product..." onkeyup="showSearchResults()">
+                <div id="search-results" class="dropdown"></div>
+            </div>
+            <div class="cart-section">
+                <h2>Shopping Cart</h2>
+                <table id="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Item</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Remove</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Items will be dynamically added here -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="total-section">
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <p>Tax: $<span id="tax">0.00</span></p>
+                <p>Total: $<span id="total">0.00</span></p>
+            </div>
+            <div class="payment-section">
+                <button onclick="processPayment('cash')">Pay with Cash</button>
+                <button onclick="processPayment('card')">Pay with Card</button>
+            </div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
